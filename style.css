@@ -1,0 +1,188 @@
+/* CSS Reset  */
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+p,
+.btn {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  background-color: none;
+  border: 1px solid black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all ease 300ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-color: #4c8cf4;
+  color: #4c8cf4;
+}
+
+/* Header area */
+.game-description {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.game-rules {
+  text-align: center;
+  width: 400px;
+}
+
+/* Game area */
+.game-container {
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.game {
+  width: 100%;
+  height: 80%;
+}
+
+.line-titles {
+  height: 10%;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+}
+
+.start-title {
+  left: 17.5px;
+}
+
+.finish-title {
+  right: 17.5px;
+}
+
+.playing-field {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+.line {
+  border-left: thick solid black;
+  height: 100%;
+}
+
+.start-line,
+.finish-line {
+  position: absolute;
+  top: 0;
+}
+
+.start-line {
+  left: 35px;
+}
+
+.finish-line {
+  right: 35px;
+}
+
+/* Diamonds */
+
+.diamonds {
+  height: 100%;
+  position: relative;
+}
+
+/* Scoreboard */
+.scoreboard {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard-title {
+  font-size: 1.1rem;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 1rem 0;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .scores {
+    width: 90%;
+  }
+}

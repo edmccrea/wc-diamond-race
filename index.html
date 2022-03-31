@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Diamond Race</title>
+  </head>
+  <body>
+    <section class="game-description">
+      <h1 class="main-title">The Diamond Race</h1>
+      <p class="game-rules">
+        Click on a diamond to push it towards the finish line. The first one
+        there wins! Start the race again by clicking on the reset button.
+      </p>
+    </section>
+
+    <section class="game-container">
+      <div class="game">
+        <div class="line-titles">
+          <p class="start-title title">Start</p>
+          <p class="finish-title title">Finish</p>
+        </div>
+
+        <div class="playing-field">
+          <div class="start-line line"></div>
+          <div class="finish-line line"></div>
+
+          <div class="diamonds">
+            <diamond-card color="red"></diamond-card>
+            <diamond-card color="blue"></diamond-card>
+            <diamond-card color="green"></diamond-card>
+            <diamond-card color="yellow"></diamond-card>
+          </div>
+        </div>
+      </div>
+
+      <div class="scoreboard">
+        <h2 class="scoreboard-title">Scoreboard</h2>
+        <div class="scores">
+          <score-card class="score" color="red"></score-card>
+          <score-card class="score" color="blue"></score-card>
+          <score-card class="score" color="green"></score-card>
+          <score-card class="score" color="yellow"></score-card>
+        </div>
+        <div class="btn reset-btn">Reset</div>
+      </div>
+    </section>
+
+    <script type="module" src="index.js"></script>
+    <script type="module" src="./components/ScoreCard.js"></script>
+    <script type="module" src="./components/DiamondCard.js"></script>
+  </body>
+</html>
